@@ -1,11 +1,14 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      Olá mundo!
-    </div>
-  );
+import Rotas from './rotas';
+import Header from './components/Header';
+
+export default function App() {
+ return (
+    <BrowserRouter>
+      <Header />
+      <Rotas />
+    </BrowserRouter>
+ );
 }
-
-export default App;
